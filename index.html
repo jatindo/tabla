@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="button-container">
+
+    <div class="view" id="view">
+<label for="view1"  > Choose a View :</label>
+<select id="view1" onchange="show(value)">
+
+    <option value="TABLE">TABLE</option>
+    <option value="LIST">LIST</option>
+
+</select> 
+    </div>
+
+
+
+<div>
+    <div class="add-button"><button type="button" id="add-row" onclick="addRow()">ADD ROW</button> </div>   
+    </div> 
+    </div>
+    
+    
+    
+    
+    
+    
+    <table id="table" class="table">
+        <thead>
+            <tr class="column-data">
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="usersList">
+        
+        </tbody>
+        
+        
+    </table>
+    <div class="text" id="text">
+        <p>No Information</p>
+    </div>
+
+<div class="input-form" id="input-form">
+    <h1>Input Form</h1>
+    <form >
+        
+       
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age">
+        
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" name="gender">
+        
+       
+
+        <button type="button" id="save-button" class="save-button" onclick="save()">SAVE</button>
+
+        <button type="button" id="cancel-button" class="cancel-button" onclick="cancel()">Cancel</button>
+    </form>
+
+</div> 
+
+
+<div class="view-list-container" id="view-list-container">
+    <ul class="view-list" id="view-list">
+        
+    </ul>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+
+
+
+    <script src="table.js">
+
+    </script>
+</body>
+
+</html>

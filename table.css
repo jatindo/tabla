@@ -1,0 +1,102 @@
+.table{
+    border: 1px solid black;
+    align-items: center;
+    width:100%;
+   /*display:none;*/
+}
+th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    
+}
+.button-container{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+.add-button{
+    
+    justify-content: flex-end;
+    border-radius: 1px;
+    box-shadow: inset;
+    
+    
+}
+.save-button{
+    margin-top: 12px;
+    width:25%;
+    
+}
+.cancel-button{
+    margin-top: 12px;
+    width:25%;
+}
+.input-form{
+
+    margin-top:100px;
+    display: none;
+    
+    
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text{
+    text-align: center;
+   
+}
+.view{
+    font-size: large;
+}
+.view-list{
+    list-style-type: none;
+    
+
+}
+.view-list {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    
+}
+#list1{
+    box-sizing: border-box;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(235, 49, 235);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px;
+    width: 20%;
+    padding:4%;
+    
+    margin: 50px;
+    box-sizing: border-box;
+    
+
+}
+.card{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.card0{
+display: flex;
+flex-direction: column;
+}
+.btn{
+    border: none;
+    background: none;
+}
+.view-list-container{
+    display: none;
+}
